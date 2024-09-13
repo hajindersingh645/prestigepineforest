@@ -1,5 +1,5 @@
-import React from 'react';
-import { X, Phone } from 'lucide-react';
+import React from "react";
+import { X, Phone } from "lucide-react";
 
 const MobileNavigation = ({ onClose }) => {
   return (
@@ -13,13 +13,24 @@ const MobileNavigation = ({ onClose }) => {
         </button>
       </div>
       <nav className="flex flex-col items-center space-y-4 mt-8">
-        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">Home</a>
-        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">Listings</a>
-        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">About</a>
-        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">Contact</a>
+        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">
+          Home
+        </a>
+        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">
+          Listings
+        </a>
+        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">
+          About
+        </a>
+        <a href="#" className="text-xl text-gray-600 hover:text-gray-900">
+          Contact
+        </a>
       </nav>
       <div className="mt-auto mb-8 flex justify-center">
-        <a href="tel:+1234567890" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md flex items-center text-lg">
+        <a
+          href="tel:+6360949350"
+          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md flex items-center text-lg"
+        >
           <Phone size={24} className="mr-2" />
           Call Now
         </a>

@@ -97,7 +97,7 @@ const Overview = () => {
           </table>
         </div>
         <div className="text-center">
-          <Link href="tel:1234567890" className="btn mt-5 px-6 inline-block">
+          <Link href="tel:6360949350" className="btn mt-5 px-6 inline-block">
             Download Brochure
           </Link>
         </div>
