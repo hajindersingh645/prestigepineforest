@@ -1,72 +1,87 @@
-import { House, IndianRupee, Ruler } from "lucide-react";
+import { Download, House, IndianRupee, Ruler } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const pricingPlans = [
   {
-    type: "3bhk",
-    price: 2.95,
+    type: "on request",
+    price: "on request",
     features: ["Codename Raintree Park", "3 BHK Price"],
-    area: "2005 SqFt",
+    area: "update soon",
   },
   {
-    type: "3bhk",
-    price: 3.25,
-    features: ["Codename Raintree Park", "3 BHK + Maid's Room Price"],
-    area: "2187 - 2400 SqFt",
+    type: "on request",
+    price: "on request",
+    features: ["Codename Raintree Park", "3 BHK Price"],
+    area: "update soon",
   },
   {
-    type: "3.5bhk",
-    price: 3.65,
-    features: ["Codename Raintree Park", "3 BHK + Study Room + Maid's"],
-    area: "2451 - 2588 SqFt",
+    type: "on request",
+    price: "on request",
+    features: ["Codename Raintree Park", "3 BHK Price"],
+    area: "update soon",
   },
-  {
-    type: "4bhk",
-    price: 4,
-    features: ["Codename Raintree Park", "4 BHK + Maid's Room Price"],
-    area: "2900 - 2956 SqFt",
-  },
-  {
-    type: "5bhk",
-    price: 5,
-    features: ["Codename Raintree Park", "4 BHK + Studio Price"],
-    area: "3500 - 3700 SqFt",
-  },
+];
+
+const textContent = [
+  `The price of Prestige Pine Forest is one of the key factors that make it an attractive option for homebuyers in Bangalore. With a range of apartments available, from 1 BHK to spacious 3 BHK units, there is something to suit every budget and lifestyle.The starting price for a 1 BHK apartment in Prestige Pine Forest is competitive and offers great value for money. For those looking for more space, the prices increase accordingly but still remain affordable compared to other luxury projects in the area.`,
+  `What sets Prestige Pine Forest apart is its exceptional quality and attention to detail, making it worth every penny. The project offers modern amenities, well-designed floor plans, and beautiful landscaped gardens that add value to your investment.It's important to note that prices are subject to change based on various factors such as location within the project, floor level, and additional features or upgrades chosen by the buyer.`,
+  `Therefore, it's always recommended to check with the sales team or visit their website for the latest pricing information.Prestige Pine Forest offers a range of options at reasonable prices without compromising on quality or luxury. It presents an excellent opportunity for individuals seeking their dream home in Bangalore.`,
 ];
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-slate-100">
+    <section id="pricing" className="">
       <div className="container">
-        <h2 className="title">pricing</h2>
+        <div className="page-header">
+          <h2 className="title">Price of Prestige Pine Forest</h2>
+        </div>
         <div className="pricing--col">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
             {pricingPlans.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-between h-full bg-white rounded-bl-[40px] p-12 shadow-lg text-center transition-transform hover:scale-110 delay-100"
+                className="flex flex-col justify-between h-full rounded-3xl bg-white border border-primary shadow-[3px_3px_0_0_var(--color-primary)] p-9 text-center relative transition-transform hover:scale-110 delay-100"
               >
-                <div className="property-icon flex justify-center mb-5">
-                  <House size={59} className="text-primary" />
-                </div>
-                <p className="property-type uppercase font-base font-semibold text-4xl mb-3">
-                  {item.type}
+                <p className="property-type capitalize text-2xl font-base mb-3">
+                  <span className="font-semibold">unit type</span>
+                  {`: `}
+                  <span className="c">{item.type}</span>
                 </p>
-                <p className="property-area text-lg mb-5 flex justify-center items-center gap-3">
-                  <Ruler size={20} className="text-gray-400" /> {item.area}
+                <p className="property-area text-xl mb-5 flex justify-center items-center gap-3">
+                  <span className="font-semibold"> Size (Carpet): </span>
+                  <span className="capitalize">{item.area} (SqFt)</span>
                 </p>
-                <ul className="features space-y-2 divide-y mb-6">
+                {/* <ul className="features space-y-2 divide-y mb-6">
                   {item.features.map((feature, i) => (
                     <li key={i} className="text-gray-600">
                       {feature}
                     </li>
                   ))}
-                </ul>
-                <p className="property-price uppercase font-medium text-3xl flex items-center justify-center">
-                  <IndianRupee className="text-primary_" size={26} />{" "}
-                  {item.price} CR*
+                </ul> */}
+                <p className="property-price capitalize flex items-center justify-center gap-2">
+                  <span className="font-semibold text-3xl">Price:</span>{" "}
+                  <span className="font-normal text-2xl"> {item.price}</span>{" "}
+                  (CR*)
                 </p>
+
+                <Link
+                  href="#uploadPDF"
+                  className="btn btn-outline  uppercase  transition-all  inline-block mt-5"
+                >
+                  {" "}
+                  <span className="flex justify-center items-center gap-2">
+                    enquiry now
+                  </span>
+                </Link>
               </div>
+            ))}
+          </div>
+          <div className="pt-4">
+            {textContent.map((item, i) => (
+              <p key={i} className="">
+                {item}
+              </p>
             ))}
           </div>
         </div>

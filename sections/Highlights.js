@@ -21,7 +21,7 @@ const projectDetails = [
 
 const Highlights = () => {
   return (
-    <section id="project-overview" className="bg-slate-100">
+    <section id="project-overview" className="bg-primary-bg">
       <div className="container">
         <div className="page-header">
           <h2 className="title">Highlights of Prestige Pine Forest</h2>
@@ -37,7 +37,6 @@ const Highlights = () => {
             <p>
               {`For fitness enthusiasts, there are facilities like a rooftop garden and reflexology track where you can indulge in rejuvenating activities amidst lush greenery.Additionally, Prestige Pine Forest offers convenience at your doorstep with its own convenience store within the premises.`}
             </p>
-           
           </div>
         </div>
       </div>

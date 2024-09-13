@@ -16,8 +16,8 @@ const navigation = [
     path: "#pricing",
   },
   {
-    label: "Floor Plans",
-    path: "#floor-plans",
+    label: "master Plans",
+    path: "#master-plans",
   },
   {
     label: "Location",

@@ -17,7 +17,7 @@ const HeroSection = () => {
 
       <div className="absolute  inset-0 bg-black opacity-60 z-10"></div>
 
-      <div className="absolute flex justify-center items-center inset-0 z-20 ">
+      <div className="absolute flex justify-center items-stretch inset-0 z-20 h-full">
         <div className="container grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="text lg:col-span-2 flex items-start flex-col justify-center  px-7 pt-20 lg:p-0">
             <h1 className="heading hero">Prestige Pine Forest </h1>
@@ -25,8 +25,8 @@ const HeroSection = () => {
               <MapPin /> at, Whitefield Bangalore
             </p>
           </div>
-          <div className="form items-end flex">
-            <p className="form-heading text-black text-2xl mb-5 font-semibold">
+          <div className="form items-end flex self-end">
+            <p className="form-heading text-black text-3xl mb-5 font-semibold">
               Enquire Now!
             </p>
             <LeadForm buttonLabel="Submit" />

@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header border-b-4 border-primary">
       <div className="header--wrapper container">
         <div className="branding">
           <div className="logo">
@@ -32,7 +32,7 @@ const Header = () => {
           <menu>
             {navigation.map((item, index) => (
               <li key={index} className="link-item">
-                <Link href={item.path} className="link">
+                <Link href={item.path} className="link ">
                   {item.label}
                 </Link>
               </li>
@@ -41,10 +41,10 @@ const Header = () => {
         </nav>
         <div className="header--call-now">
           <Link
-            href="tel:+918296818834"
+            href="tel:+911234567890"
             className="flex justify-between items-center text-xl font-semibold gap-2 hover:text-primary transition-colors"
           >
-            <Phone size="30" className="text-primary " /> +91 82968-18834
+            <Phone size="30" className="text-primary " /> +91 12345-67890
           </Link>
         </div>
         <div onClick={toggleMenu} className="mobile-toggle">

@@ -72,26 +72,6 @@ const Overview = () => {
               sprawling landscaped gardens dotted throughout the property where
               you can reconnect with nature
             </p>
-            <div className="overflow-x-auto p-4 max-w-[600px] px-0">
-              <table className="min-w-full bg-white border border-primary rounded-lg">
-                <tbody>
-                  {projectDetails.map((detail, index) => (
-                    <tr key={index} className="border-b border-primary">
-                      <td className="px-4 py-2 font-semibold text-primary border-r border-primary">
-                        {detail.label}
-                      </td>
-                      <td className="px-4 py-2 text-gray-600">
-                        {detail.value}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <Link href="tel:1234567890" className="btn inline-block mt-5 px-6">
-              Download Brochure
-            </Link>
           </div>
           <div className="col">
             <Image
@@ -101,6 +81,25 @@ const Overview = () => {
               alt="Prestige Pine Forest"
             />
           </div>
+        </div>
+        <div className="overflow-x-auto p-4 px-0">
+          <table className="min-w-full bg-white border border-primary rounded-lg">
+            <tbody>
+              {projectDetails.map((detail, index) => (
+                <tr key={index} className="border-b border-primary">
+                  <td className="px-4 py-2 font-semibold text-primary border-r border-primary">
+                    {detail.label}
+                  </td>
+                  <td className="px-4 py-2 text-gray-600">{detail.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="text-center">
+          <Link href="tel:1234567890" className="btn mt-5 px-6 inline-block">
+            Download Brochure
+          </Link>
         </div>
       </div>
     </section>

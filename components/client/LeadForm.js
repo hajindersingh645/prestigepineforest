@@ -30,6 +30,8 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
           name: data.name,
           email: data.email,
           phone: data.phone,
+          message: data.message,
+          scheduletime: data.scheduletime,
           drake: "a936629a-cc8d-4157-a719-46278475a167",
         }),
       });
@@ -77,6 +79,28 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
         name="phone"
         placeholder="Phone Number"
         {...register("phone", { required: true })}
+        id=""
+      />
+
+      <select
+        class="form-select form-control"
+        name="scheduletime"
+        {...register("scheduletime", { required: true })}
+      >
+        <option class="d-none">Best Time To Call You</option>
+        <option value={"Within 15 Min."}>Within 15 Min.</option>
+        <option value={"08AM To 12PM"}>08AM To 12PM</option>
+        <option value={"12PM To 04PM"}>12PM To 04PM</option>
+        <option value={"04PM To 08PM"}>04PM To 08PM</option>
+        <option value={"anytime"}>Anytime</option>
+      </select>
+      <textarea
+        type="number"
+        rows={3}
+        className="input"
+        name="message"
+        placeholder="Message"
+        {...register("message", { required: true })}
         id=""
       />
       {errors.name && (

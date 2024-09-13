@@ -3,33 +3,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer id="" className="bg-primary text-white py-10">
+    <footer id="" className="bg-black text-white p-5">
       <div className="container">
-        <p className="mb-5">
-          Codename Raintree Park Promoted by NEXT FOOTSTEP PRIVATE LIMITED -
-          Authorised Affiliate Channel Partner (RERA Approved Agent Registration
-          Number - PRM/KA/RERA/1251/309/AG/210415/002404)
-        </p>
-        <p>
-          <strong>Disclaimer:</strong> The Information Provided On This Website
-          Is Intended Exclusively For Informational Purposes And Should Not Be
-          Construed As An Offer Of Services. This Site Is Managed By A RERA
-          Authorized Real Estate Agent Namely - NEXT FOOTSTEP PRIVATE LIMITED.
-          The Pricing Information Presented On This Website Is Subject To
-          Alteration Without Advance Notification, And The Assurance Of Property
-          Availability Cannot Be Guaranteed. The Images Showcased On This
-          Website Are For Representational Purposes Only And May Not Accurately
-          Reflect The Actual Properties. We May Share Your Data With Real Estate
-          Regulatory Authority (RERA) Registered Developers For Further
-          Processing As Necessary. Additionally, We May Send Updates And
-          Information To The Mobile Number Or Email Address Registered With Us.
-          All Rights Reserved. The Content, Design, And Information On This
-          Website Are Protected By Copyright And Other Intellectual Property
-          Rights. Any Unauthorized Use Or Reproduction Of The Content May
-          Violate Applicable Laws.For Accurate And Up-To-Date Information
-          Regarding Services, Pricing, Availability, And Any Other Details, It
-          Is Recommended To Contact Us Directly Through The Provided Contact
-          Information On This Website. Thank You For Visiting Our Website!
+        <p className="p-0 text-center">
+          All Rights Reserved. &copy; 2017 - {new Date().getFullYear()}
         </p>
       </div>
       <div className="wa-button">

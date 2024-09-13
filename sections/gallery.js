@@ -8,91 +8,31 @@ import { useEffect } from "react";
 const gallery = [
   {
     id: `gallery-image-1`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_1.jpg`,
+    image: `/images/gallery/gallery_img1.jpg`,
   },
   {
     id: `gallery-image-2`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_2.jpg`,
+    image: `/images/gallery/gallery_img2.jpg`,
   },
   {
     id: `gallery-image-3`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_3.jpg`,
+    image: `/images/gallery/gallery_img3.jpg`,
   },
   {
     id: `gallery-image-5`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_5.jpg`,
+    image: `/images/gallery/gallery_img5.jpg`,
   },
   {
     id: `gallery-image-6`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_6.jpg`,
+    image: `/images/gallery/gallery_img6.jpg`,
   },
   {
     id: `gallery-image-7`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_7.jpg`,
+    image: `/images/gallery/gallery_img7.jpg`,
   },
   {
     id: `gallery-image-8`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_8.jpg`,
-  },
-  {
-    id: `gallery-image-9`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_9.jpg`,
-  },
-  {
-    id: `gallery-image-10`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_10.jpg`,
-  },
-  {
-    id: `gallery-image-11`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_11.jpg`,
-  },
-  {
-    id: `gallery-image-12`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_12.jpg`,
-  },
-  {
-    id: `gallery-image-13`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_13.jpg`,
-  },
-  {
-    id: `gallery-image-14`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_14.jpg`,
-  },
-  {
-    id: `gallery-image-15`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_15.jpg`,
-  },
-  {
-    id: `gallery-image-16`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_16.jpg`,
-  },
-  {
-    id: `gallery-image-17`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_17.jpg`,
-  },
-  {
-    id: `gallery-image-18`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_18.jpg`,
-  },
-  {
-    id: `gallery-image-19`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_19.jpg`,
-  },
-  {
-    id: `gallery-image-20`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_20.jpg`,
-  },
-  {
-    id: `gallery-image-21`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_21.jpg`,
-  },
-  {
-    id: `gallery-image-22`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_22.jpg`,
-  },
-  {
-    id: `gallery-image-23`,
-    image: `/images/gallery/Prestige_Raintree_Park_Lifestyle_Gallery_23.jpg`,
+    image: `/images/gallery/gallery_img8.jpg`,
   },
 ];
 
@@ -105,9 +45,11 @@ export default function ProjectGallery() {
   return (
     <section id="gallery" className="">
       <div className="container">
-        <h2 className="title">Gallery</h2>
-        <div className="text-center">
-          <div className="gallery--wrapper">
+        <div className="page-header">
+          <h2 className="title">Gallery</h2>
+        </div>
+        <div className="text-left">
+          <div className="gallery--wrapper grid grid-cols-1 md:grid-cols-4">
             {gallery.map((galleryItem) => (
               <div className="gallery--item" key={galleryItem.id}>
                 <Link
@@ -127,6 +69,8 @@ export default function ProjectGallery() {
               </div>
             ))}
           </div>
+          <p className="pt-4">{`The gallery of Prestige Pine Forest is a visual treat for anyone who appreciates exquisite design and architecture. With stunning images showcasing the beauty and elegance of these residences, the gallery allows potential buyers to get a glimpse into their dream home.`}</p>
+          <p>{`With every click, you'll find yourself falling more in love with Prestige Pine Forest's impeccable craftsmanship and thoughtful design elements. Step into our virtual world through our online gallery and let it inspire you as you embark on this exciting journey towards owning your dream home`}</p>
         </div>
       </div>
     </section>
