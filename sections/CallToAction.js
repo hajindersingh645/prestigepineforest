@@ -1,8 +1,14 @@
+"use client";
+import FormPopup from "@/components/client/Popup/FormPopup";
 import { ThumbsUp } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const CallToAction = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
   return (
     <section className="call-to-action pt-20 bg-primary-bg text-center">
       <div className="max-w-5xl mx-auto">
@@ -18,16 +24,21 @@ const CallToAction = () => {
           Pre Launch Prices Applicable On 1st Few Units. Construction Linked
           Flexi Payment Plans.
         </p> */}
-        <Link
-          href="#"
+        <button
+          onClick={openModal}
           className="btn uppercase hover:bg-primary hover:scale-110 transition-all hover:text-white inline-block mt-5"
         >
           {" "}
           <span className="flex items-center gap-2">
             <ThumbsUp size={32} /> i'm intrested{" "}
           </span>
-        </Link>
+        </button>
       </div>
+      <FormPopup
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        onClose={closeModal}
+      />
     </section>
   );
 };

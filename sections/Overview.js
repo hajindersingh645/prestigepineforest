@@ -1,6 +1,11 @@
+"use client";
+import LeadForm from "@/components/client/LeadForm";
+import FormPopup from "@/components/client/Popup/FormPopup";
+import CustomModal from "@/components/client/Popup/PopupModel";
+import ModalContent from "@/components/client/Popup/PopupModelContent";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
 
 const projectDetails = [
   { label: "Type", value: "Apartments" },
@@ -20,6 +25,10 @@ const projectDetails = [
 ];
 
 const Overview = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
   return (
     <section id="project-overview">
       <div className="container">
@@ -97,9 +106,15 @@ const Overview = () => {
           </table>
         </div>
         <div className="text-center">
-          <Link href="tel:6360949350" className="btn mt-5 px-6 inline-block">
+          <button onClick={openModal} className="btn mt-5 px-6 inline-block">
             Download Brochure
-          </Link>
+          </button>
+
+          <FormPopup
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            onClose={closeModal}
+          />
         </div>
       </div>
     </section>

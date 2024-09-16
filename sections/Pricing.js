@@ -1,6 +1,8 @@
+"use client";
+import FormPopup from "@/components/client/Popup/FormPopup";
 import { Download, House, IndianRupee, Ruler } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const pricingPlans = [
   {
@@ -30,6 +32,10 @@ const textContent = [
 ];
 
 const Pricing = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
   return (
     <section id="pricing" className="">
       <div className="container">
@@ -65,15 +71,15 @@ const Pricing = () => {
                   (CR*)
                 </p>
 
-                <Link
-                  href="#uploadPDF"
+                <button
+                  onClick={openModal}
                   className="btn btn-outline  uppercase  transition-all  inline-block mt-5"
                 >
                   {" "}
                   <span className="flex justify-center items-center gap-2">
                     enquiry now
                   </span>
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -86,6 +92,11 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+      <FormPopup
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        onClose={closeModal}
+      />
     </section>
   );
 };
