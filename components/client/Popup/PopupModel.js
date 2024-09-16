@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Modal from "react-modal";
-import { useState } from "react";
 
 const CustomModal = ({ isOpen, onRequestClose, contentLabel, children }) => {
   return (

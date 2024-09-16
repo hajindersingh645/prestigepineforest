@@ -1,10 +1,6 @@
 "use client";
-import LeadForm from "@/components/client/LeadForm";
 import FormPopup from "@/components/client/Popup/FormPopup";
-import CustomModal from "@/components/client/Popup/PopupModel";
-import ModalContent from "@/components/client/Popup/PopupModelContent";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const projectDetails = [
