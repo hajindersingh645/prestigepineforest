@@ -24,7 +24,7 @@
     @apply bg-transparent text-primary border-primary transition-all hover:bg-primary hover:text-white;
   }
   .wa-button {
-    @apply fixed bottom-10 left-10;
+    @apply fixed bottom-5 left-5 z-30;
   }
   .wa-button--icon {
     @apply bg-primary text-white border border-white rounded-full size-14 flex justify-center items-center;
