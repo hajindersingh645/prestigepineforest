@@ -5,7 +5,7 @@ import React from "react";
 const amenitiesList = [
   {
     title: "Community Amenities",
-    amenities: ["Club House", "Outdoor Courts"],
+    amenities: ["27000 SqFt Club House", "Outdoor Courts"],
   },
   {
     title: "Health and Fitness",

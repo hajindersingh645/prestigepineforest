@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         display: "var(--font-mooli)",
+        display2: "var(--font-Playfair_display)",
         base: "var(--font-open_sans)",
       },
     },

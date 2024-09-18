@@ -34,6 +34,58 @@ const gallery = [
     id: `gallery-image-8`,
     image: `/images/gallery/gallery_img8.jpg`,
   },
+  {
+    id: "gallery-image-9",
+    image: "/images/gallery/prestige-glenbrook.png",
+  },
+  {
+    id: "gallery-image-10",
+    image: "/images/gallery/prestige-group-apartments.png",
+  },
+  {
+    id: "gallery-image-11",
+    image: "/images/gallery/prestige-group-projects.png",
+  },
+  {
+    id: "gallery-image-12",
+    image: "/images/gallery/prestige-group-township.jpg",
+  },
+  {
+    id: "gallery-image-13",
+    image: "/images/gallery/prestige-lakeside-habitat.png",
+  },
+  {
+    id: "gallery-image-14",
+    image: "/images/gallery/prestige-park-grove.jpg",
+  },
+  {
+    id: "gallery-image-15",
+    image: "/images/gallery/prestige-raintree-park-aerial-view.webp",
+  },
+  {
+    id: "gallery-image-16",
+    image: "/images/gallery/prestige-raintree-park-clubhouse.webp",
+  },
+  {
+    id: "gallery-image-17",
+    image: "/images/gallery/prestige-raintree-park-entrance.webp",
+  },
+  {
+    id: "gallery-image-18",
+    image: "/images/gallery/prestige-raintree-park-grand-entrance.webp",
+  },
+  {
+    id: "gallery-image-19",
+    image: "/images/gallery/prestige-raintree-park-lake-view.webp",
+  },
+  {
+    id: "gallery-image-20",
+    image: "/images/gallery/prestige-raintree-park-virtual-view.webp",
+  },
+  {
+    id: "gallery-image-21",
+    image: "/images/gallery/varthur-lake.png",
+  },
 ];
 
 export default function ProjectGallery() {
