@@ -1,6 +1,7 @@
 "use client";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { Download } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -62,7 +63,7 @@ const FloorPlans = () => {
                 >
                   <Image
                     src={`/images/floor-plans/${item}`}
-                    Ṇ
+                    className="blur-sm"
                     alt={`Floor Plans`}
                     fill
                     sizes="(max-width: 768px) 100vw"
@@ -76,7 +77,7 @@ const FloorPlans = () => {
                 className=""
                 alt="Floor Plans"
               /> */}
-              {/* {item.message ? (
+              {item.message ? (
                 <div className="button-overlay absolute top-0 h-full  left-0 w-full flex justify-center items-center">
                   <div className="flex text-3xl font-bold text-black capitalize z-10">
                     {item.message}
@@ -85,7 +86,7 @@ const FloorPlans = () => {
               ) : (
                 <div className="button-overlay absolute bottom-5  left-0 w-full">
                   <Link
-                    href="#uploadPDF"
+                    href="/upload/Prestige Pine Forest RERA Brochure LR.pdf"
                     target="_blank"
                     className="btn  uppercase  transition-all  inline-block mt-5"
                   >
@@ -95,7 +96,7 @@ const FloorPlans = () => {
                     </span>
                   </Link>
                 </div>
-              )} */}
+              )}
             </div>
           ))}
         </div>
