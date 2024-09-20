@@ -44,7 +44,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="AW-16593553006" />
+      <GoogleTagManager gtmId="AW-16705289191" />
+
       <body className={`${montserrat.variable}  ${openSans.variable}`}>
         <Header />
         {children}
