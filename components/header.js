@@ -20,8 +20,8 @@ const Header = () => {
         <div className="branding">
           <div className="logo">
             <Image
-              src="/images/logo.png"
-              width={170}
+              src="/images/logo_pine_forest.png"
+              width={200}
               height={100}
               className="logo"
               alt=""

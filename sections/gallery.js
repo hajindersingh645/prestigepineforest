@@ -7,6 +7,10 @@ import { useEffect } from "react";
 
 const gallery = [
   {
+    id: `gallery-image-0`,
+    image: `/images/gallery/aerial-view.png`,
+  },
+  {
     id: `gallery-image-1`,
     image: `/images/gallery/gallery_img1.jpg`,
   },

@@ -7,15 +7,15 @@ const HeroSection = () => {
   return (
     <div id="hero" className="relative h-[500px] lg:h-[800px] w-full">
       <Image
-        src="/images/prestige-park-ridge.jpg"
+        src="/images/hero_section.jpg"
         alt="Hero Image"
         layout="fill"
         objectFit="cover"
-        objectPosition="top"
+        objectPosition="0% 75%"
         className="z-0"
       />
 
-      <div className="absolute  inset-0 bg-black opacity-60 z-10"></div>
+      <div className="absolute  inset-0 bg-primary opacity-60 z-10"></div>
 
       <div className="absolute flex justify-center items-stretch inset-0 z-20 h-full">
         <div className="container grid grid-cols-1 lg:grid-cols-3 gap-10">

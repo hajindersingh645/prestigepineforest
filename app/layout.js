@@ -1,4 +1,9 @@
-import { Open_Sans, Mooli, Playfair_Display } from "next/font/google";
+import {
+  Open_Sans,
+  Mooli,
+  Playfair_Display,
+  Montserrat,
+} from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -9,6 +14,12 @@ const openSans = Open_Sans({
   style: ["normal"],
   variable: "--font-open_sans",
   weight: ["300", "400", "500", "600", "700", "800"],
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  style: ["normal"],
+  variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -34,9 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GoogleTagManager gtmId="AW-16593553006" />
-      <body
-        className={`${playfairDisplay.variable} ${mooli.variable} ${openSans.variable}`}
-      >
+      <body className={`${montserrat.variable}  ${openSans.variable}`}>
         <Header />
         {children}
         <Footer />

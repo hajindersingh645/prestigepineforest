@@ -3,8 +3,8 @@
 
 :root {
   scroll-behavior: smooth;
-  --color-primary: #ae8d45;
-  --color-primary-bg: #fff9eb;
+  --color-primary: #075a48;
+  --color-primary-bg: #cae5d6;
 }
 .container {
   @apply mx-auto;
@@ -88,7 +88,7 @@
     @apply lg:max-w-[800px];
   }
   h1.heading.hero {
-    @apply font-display2 font-semibold text-5xl lg:text-7xl text-white;
+    @apply font-display font-light text-5xl lg:text-7xl text-white;
   }
   .subheading.hero {
     @apply text-white text-2xl font-base mt-5 lg:mt-10;
@@ -108,7 +108,7 @@
     @apply text-center pb-4;
   }
   .title {
-    @apply text-5xl inline-block font-semibold text-primary font-display capitalize mb-10 relative after:content-[''] after:w-32 after:h-1 after:bg-primary after:-bottom-4 after:left-0 z-10 after:absolute;
+    @apply text-5xl inline-block font-normal text-primary font-display capitalize mb-10 relative after:content-[''] after:w-32 after:h-[2px] after:bg-primary after:-bottom-4 after:left-0 z-10 after:absolute;
   }
   p {
     @apply text-lg font-base pb-3;

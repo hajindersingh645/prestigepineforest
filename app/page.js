@@ -10,7 +10,8 @@ import Location from "@/sections/Location";
 import Overview from "@/sections/Overview";
 import Pricing from "@/sections/Pricing";
 import Image from "next/image";
-import MasterPlan from "@/sections/Mastplan";
+import MasterPlan from "@/sections/MasterPlan";
+import FloorPlans from "@/sections/FloorPlans";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Highlights />
       <Amenities />
       <MasterPlan />
+      <FloorPlans />
       <Pricing />
       <CallToAction />
       <ProjectGallery />

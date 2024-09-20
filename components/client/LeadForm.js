@@ -44,6 +44,20 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
         setError(false);
         setErrorsList({});
         router.push(`/thank-you`);
+
+        // Trigger PDF download
+        const pdfUrl = "/upload/Prestige Pine Forest RERA Brochure LR.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Brochure.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // After 3 seconds, redirect to home page
+        setTimeout(() => {
+          router.push("/");
+        }, 3000);
       }
 
       setSubmitting(false);

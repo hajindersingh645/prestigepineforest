@@ -3,6 +3,106 @@ import FormPopup from "@/components/client/Popup/FormPopup";
 import { Download, House, IndianRupee, Ruler } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+const unitData = [
+  {
+    price: "coming soon",
+    unitType: "A1",
+    saleArea: 546,
+    carpetArea: 368,
+    numberOfUnits: 31,
+  },
+  {
+    price: "coming soon",
+    unitType: "A2",
+    saleArea: 582,
+    carpetArea: 396,
+    numberOfUnits: 32,
+  },
+  {
+    price: "coming soon",
+    unitType: "B1A",
+    saleArea: 2442,
+    carpetArea: 1511,
+    numberOfUnits: 3,
+  },
+  {
+    price: "coming soon",
+    unitType: "B1",
+    saleArea: 2614,
+    carpetArea: 1631,
+    numberOfUnits: 28,
+  },
+  {
+    price: "coming soon",
+    unitType: "B2",
+    saleArea: 2653,
+    carpetArea: 1669,
+    numberOfUnits: 32,
+  },
+  {
+    price: "coming soon",
+    unitType: "B4A",
+    saleArea: 2621,
+    carpetArea: 1604,
+    numberOfUnits: 3,
+  },
+  {
+    price: "coming soon",
+    unitType: "B3",
+    saleArea: 2757,
+    carpetArea: 1690,
+    numberOfUnits: 30,
+  },
+  {
+    price: "coming soon",
+    unitType: "B4",
+    saleArea: 2796,
+    carpetArea: 1725,
+    numberOfUnits: 26,
+  },
+  {
+    price: "coming soon",
+    unitType: "C1A",
+    saleArea: 3121,
+    carpetArea: 1895,
+    numberOfUnits: 6,
+  },
+  {
+    price: "coming soon",
+    unitType: "C1",
+    saleArea: 3540,
+    carpetArea: 2211,
+    numberOfUnits: 56,
+  },
+  {
+    price: "coming soon",
+    unitType: "C2",
+    saleArea: 3556,
+    carpetArea: 2218,
+    numberOfUnits: 66,
+  },
+  {
+    price: "coming soon",
+    unitType: "D1",
+    saleArea: 6094,
+    carpetArea: 3564,
+    numberOfUnits: 1,
+  },
+  {
+    price: "coming soon",
+    unitType: "D2",
+    saleArea: 6508,
+    carpetArea: 3942,
+    numberOfUnits: 1,
+  },
+  {
+    price: "coming soon",
+    unitType: "D3",
+    saleArea: 7011,
+    carpetArea: 4425,
+    numberOfUnits: 1,
+  },
+];
 
 const pricingPlans = [
   {
@@ -44,19 +144,19 @@ const Pricing = () => {
         </div>
         <div className="pricing--col">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-            {pricingPlans.map((item, index) => (
+            {unitData.map((item, index) => (
               <div
                 key={index}
                 className="flex flex-col justify-between h-full rounded-3xl bg-white border border-primary shadow-[3px_3px_0_0_var(--color-primary)] p-9 text-center relative transition-transform hover:scale-110 delay-100"
               >
                 <p className="property-type capitalize text-2xl font-base mb-3">
-                  <span className="font-semibold">unit type</span>
+                  <span className="font-semibold">Unit Type</span>
                   {`: `}
-                  <span className="c">{item.type}</span>
+                  <span className="c">{item.unitType}</span>
                 </p>
                 <p className="property-area text-xl mb-5 flex justify-center items-center gap-3">
                   <span className="font-semibold"> Size (Carpet): </span>
-                  <span className="capitalize">{item.area} (SqFt)</span>
+                  <span className="capitalize">{item.saleArea} (SqFt)</span>
                 </p>
                 {/* <ul className="features space-y-2 divide-y mb-6">
                   {item.features.map((feature, i) => (

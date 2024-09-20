@@ -1,49 +1,82 @@
-import { Download, ThumbsUp } from "lucide-react";
+"use client";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
-const masterPlan = [
-  {
-    message: "master plan coming soon",
-    image: "X-Whitefield-FP-6.jpg",
-    file: "",
-  },
-  {
-    message: "coming soon",
-    image: "X-Whitefield-FP-1.jpg",
-    file: "",
-  },
-  {
-    message: "coming soon",
-    image: "X-Whitefield-FP-1.jpg",
-    file: "",
-  },
+const floorPlans = [
+  "floor-plan (1).png",
+  "floor-plan (2).png",
+  "floor-plan (3).png",
+  "floor-plan (4).png",
+  "floor-plan (5).png",
+  "floor-plan (6).png",
+  "floor-plan (7).png",
+  "floor-plan (8).png",
+  "floor-plan (9).png",
+  "floor-plan (10).png",
+  "floor-plan (11).png",
+  "floor-plan (12).png",
+  "floor-plan (13).png",
+  "floor-plan (14).png",
+  "floor-plan (15).png",
+  "floor-plan (16).png",
+  "floor-plan (17).png",
+  "floor-plan (18).png",
+  "floor-plan (19).png",
+  "floor-plan (20).png",
+  "floor-plan (21).png",
+  "floor-plan (22).png",
+  "floor-plan (23).png",
+  "floor-plan (24).png",
+  "floor-plan (25).png",
+  "floor-plan (26).png",
 ];
 
-const MasterPlan = () => {
+const FloorPlans = () => {
+  useEffect(() => {
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  }, []);
   return (
-    <section id="master-plans" className="bg-primary-bg">
+    <section id="floor-plans" className="bg-slate-100">
       <div className="container">
         <div className="page-header">
-          <h2 className="title">
-            Master Plan and Floor Plan of Prestige Pine Forest
-          </h2>
+          <h2 className="title">Floor Plans of Prestige Pine Forest</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-          {masterPlan.map((item, index) => (
+        <div className="gallery-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+          {floorPlans.map((item, index) => (
             <div
               key={index}
               className="floor-plan--item flex flex-col justify-between rounded-3xl bg-white border border-primary shadow-[3px_3px_0_0_var(--color-primary)] p-8 text-center relative"
             >
-              <Image
-                src={`/images/floor-plans/${item.image}`}
+              <div className="gallery--item" key={index}>
+                <Link
+                  className="gallery--image"
+                  href={`/images/floor-plans/${item}`}
+                  data-fancybox
+                  data-caption={`Codename Raintree Park - Gallery`}
+                >
+                  <Image
+                    src={`/images/floor-plans/${item}`}
+                    Ṇ
+                    alt={`Floor Plans`}
+                    fill
+                    sizes="(max-width: 768px) 100vw"
+                  />
+                </Link>
+              </div>
+              {/* <Image
+                src={`/images/floor-plans/${item}`}
                 width={400}
                 height={350}
-                className="blur-sm"
+                className=""
                 alt="Floor Plans"
-              />
-              {item.message ? (
+              /> */}
+              {/* {item.message ? (
                 <div className="button-overlay absolute top-0 h-full  left-0 w-full flex justify-center items-center">
                   <div className="flex text-3xl font-bold text-black capitalize z-10">
                     {item.message}
@@ -62,7 +95,7 @@ const MasterPlan = () => {
                     </span>
                   </Link>
                 </div>
-              )}
+              )} */}
             </div>
           ))}
         </div>
@@ -76,4 +109,4 @@ const MasterPlan = () => {
   );
 };
 
-export default MasterPlan;
+export default FloorPlans;

@@ -18,8 +18,7 @@ module.exports = {
         "primary-bg": "var(--color-primary-bg)",
       },
       fontFamily: {
-        display: "var(--font-mooli)",
-        display2: "var(--font-Playfair_display)",
+        display: "var(--font-montserrat)",
         base: "var(--font-open_sans)",
       },
     },
