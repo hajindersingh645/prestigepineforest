@@ -30,7 +30,7 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
           name: data.name,
           email: data.email,
           phone: data.phone,
-          message: data.message,
+          // message: data.message,
           drake: "8b21ed2c-7565-4092-9537-3690d432e3cc",
         }),
       });
@@ -94,7 +94,7 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
         {...register("phone", { required: true })}
         id=""
       />
-      <textarea
+      {/* <textarea
         type="number"
         rows={3}
         className="input"
@@ -102,7 +102,7 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
         placeholder="Message"
         {...register("message", { required: true })}
         id=""
-      />
+      /> */}
       {errors.name && (
         <span className="error">{`Phone number can not be empty`}</span>
       )}
