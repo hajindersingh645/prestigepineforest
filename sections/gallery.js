@@ -92,6 +92,26 @@ const gallery = [
   },
 ];
 
+const galleryImages = [
+  "/images/gallery/gallery-images (1).jpg",
+  "/images/gallery/gallery-images (2).jpg",
+  "/images/gallery/gallery-images (3).jpg",
+  "/images/gallery/gallery-images (4).jpg",
+  "/images/gallery/gallery-images (5).jpg",
+  "/images/gallery/gallery-images (6).jpg",
+  "/images/gallery/gallery-images (7).jpg",
+  "/images/gallery/gallery-images (8).jpg",
+  "/images/gallery/gallery-images (9).jpg",
+  "/images/gallery/gallery-images (10).jpg",
+  "/images/gallery/gallery-images (11).jpg",
+  "/images/gallery/gallery-images (12).jpg",
+  "/images/gallery/gallery-images (13).jpg",
+  "/images/gallery/gallery-images (14).jpg",
+  "/images/gallery/gallery-images (15).jpg",
+  "/images/gallery/gallery-images (16).jpg",
+  "/images/gallery/gallery-images (17).jpg",
+];
+
 export default function ProjectGallery() {
   useEffect(() => {
     Fancybox.bind("[data-fancybox]", {
@@ -106,16 +126,16 @@ export default function ProjectGallery() {
         </div>
         <div className="text-left">
           <div className="gallery--wrapper grid grid-cols-1 md:grid-cols-4">
-            {gallery.map((galleryItem) => (
-              <div className="gallery--item" key={galleryItem.id}>
+            {galleryImages.map((item, index) => (
+              <div className="gallery--item" key={index}>
                 <Link
                   className="gallery--image"
-                  href={galleryItem.image}
+                  href={item}
                   data-fancybox
                   data-caption={`Codename Raintree Park - Gallery`}
                 >
                   <Image
-                    src={`${galleryItem.image}`}
+                    src={`${item}`}
                     Ṇ
                     alt={`Codename Raintree Park`}
                     fill

@@ -11,7 +11,7 @@ const CallToAction = () => {
   const closeModal = () => setModalIsOpen(false);
   return (
     <section className="call-to-action pt-20 bg-primary-bg text-center">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="page-header">
           <h2 className="title">
             Schedule a Site-Visit to Prestige Pine Forest

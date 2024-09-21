@@ -12,6 +12,7 @@ import Pricing from "@/sections/Pricing";
 import Image from "next/image";
 import MasterPlan from "@/sections/MasterPlan";
 import FloorPlans from "@/sections/FloorPlans";
+import VirtualTour from "@/sections/VirtualTour";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Amenities />
       <MasterPlan />
       <FloorPlans />
+      <VirtualTour />
       <Pricing />
       <CallToAction />
       <ProjectGallery />

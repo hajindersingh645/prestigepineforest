@@ -46,7 +46,7 @@ const LeadForm = ({ buttonLabel = `Download Brochure` }) => {
         router.push(`/thank-you`);
 
         // Trigger PDF download
-        const pdfUrl = "/upload/Prestige Pine Forest RERA Brochure LR.pdf";
+        const pdfUrl = "/upload/Prestige Pine Forest Lifestyle Brochure.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "Brochure.pdf";

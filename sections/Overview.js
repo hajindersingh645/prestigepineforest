@@ -50,11 +50,10 @@ const Overview = () => {
             </p>
             <p>
               The project offers a range of housing options to suit diverse
-              needs and preferences. Whether you're looking for a cozy 1 BHK
-              apartment or spacious 3 BHK residences, you'll find the perfect
-              abode at Prestige Pine Forest. Each apartment is thoughtfully
-              designed with ample natural light, ventilation, and privacy in
-              mind.
+              needs and preferences. Whether you're looking for a cozy apartment
+              or spacious residences, you'll find the perfect abode at Prestige
+              Pine Forest. Each apartment is thoughtfully designed with ample
+              natural light, ventilation, and privacy in mind.
             </p>
             <p>
               One of the standout features of this project is its emphasis on

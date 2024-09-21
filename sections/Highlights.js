@@ -46,7 +46,9 @@ const Highlights = () => {
           </div>
           <div className="col flex items-center gap-3 justify-start">
             <CheckCircle size="32" className="text-primary" />
-            <p className="text-xl font-medium text-black p-0">1km metro</p>
+            <p className="text-xl font-medium text-black p-0 ">
+              1km from functional metro station
+            </p>
           </div>
           <div className="col flex items-center gap-3 justify-start">
             <CheckCircle size="32" className="text-primary" />

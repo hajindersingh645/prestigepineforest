@@ -64,8 +64,8 @@ const MasterPlan = () => {
         <div className="grid md:grid-cols-1 gap-8 p-8">
           <div className="col relative mx-auto">
             <img
-              src="/images/floor-plans/master_plan.png"
-              className="w-full"
+              src="/images/floor-plans/master-plan-h.jpg"
+              className="w-full h-full"
               alt="master plan"
             />
           </div>

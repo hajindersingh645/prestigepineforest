@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Location = () => {
@@ -23,13 +24,23 @@ const Location = () => {
             </p>
           </div>
           <div className="pt-5">
-            <iframe
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.942419495279!2d77.73995307500495!3d12.975534687340227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae112fed1acb05%3A0xa9c51a9e20a4c5b1!2sPrestige%20Pine%20Forest!5e0!3m2!1sen!2sin!4v1726237736745!5m2!1sen!2sin"
               allowFullScreen
               className="w-full h-[600px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> */}
+            <div className="relative h-[500px] lg:h-[700px] w-full">
+              <Image
+                src="/images/location-map.jpg"
+                alt="location map"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="0% 75%"
+                className="z-0"
+              />
+            </div>
           </div>
         </div>
       </div>
