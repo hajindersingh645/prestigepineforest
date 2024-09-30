@@ -4,20 +4,20 @@ import { Download, House, IndianRupee, Ruler } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 const unitData = [
-  {
-    price: "coming soon",
-    unitType: "A1",
-    saleArea: 546,
-    carpetArea: 368,
-    numberOfUnits: 31,
-  },
-  {
-    price: "coming soon",
-    unitType: "A2",
-    saleArea: 582,
-    carpetArea: 396,
-    numberOfUnits: 32,
-  },
+  // {
+  //   price: "coming soon",
+  //   unitType: "A1",
+  //   saleArea: 546,
+  //   carpetArea: 368,
+  //   numberOfUnits: 31,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "A2",
+  //   saleArea: 582,
+  //   carpetArea: 396,
+  //   numberOfUnits: 32,
+  // },
   {
     price: "coming soon",
     unitType: "B1A",

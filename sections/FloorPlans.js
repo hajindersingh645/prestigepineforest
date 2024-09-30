@@ -84,7 +84,7 @@ const FloorPlans = () => {
                   </div>
                 </div>
               ) : (
-                <div className="button-overlay absolute bottom-5  left-0 w-full">
+                <div className="button-overlay absolute bottom-5  left-0 w-full hidden">
                   <Link
                     href="/upload/Prestige Pine Forest RERA Brochure LR.pdf"
                     target="_blank"
