@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div id="hero" className="relative h-[500px] lg:h-[800px] w-full">
       <Image
-        src="/images/hero_section.jpg"
+        src="/images/new/land-wide-top.jpg"
         alt="Hero Image"
         layout="fill"
         objectFit="cover"
@@ -25,9 +25,17 @@ const HeroSection = () => {
               <MapPin /> at, Whitefield Bangalore
             </p>
           </div>
-          <div className="form items-end flex self-end">
-            <p className="form-heading text-black text-3xl mb-5 font-semibold">
-              Enquire Now!
+          <div className="form items-end flex self-center md:mt-10">
+            <p className="form-heading text-black text-3xl mb-2 font-normal font-display">
+              A Home that Gives You
+              <br />
+              <strong>More</strong>
+            </p>
+            <p className="form-heading text-black text-2xl mb-2 font-normal">
+              Get More Out of Life
+            </p>
+            <p className="form-heading text-gray-600 text-xl mb-5 font-normal">
+              Enqire Now to Get More Information About Prestige Pine Forest
             </p>
             <LeadForm buttonLabel="Submit" />
           </div>
