@@ -2,10 +2,12 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { Download } from "lucide-react";
-
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const floorPlans = [
   "floor-plan (1).png",
@@ -41,65 +43,65 @@ const FloorPlans = () => {
     Fancybox.bind("[data-fancybox]", {
       // Your custom options
     });
+
+    return () => {
+      Fancybox.destroy();
+    };
   }, []);
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "0px",
+  };
+
   return (
     <section id="floor-plans" className="bg-slate-100">
       <div className="container">
         <div className="page-header">
           <h2 className="title">Floor Plans of Prestige Pine Forest</h2>
         </div>
-        <div className="gallery-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-          {floorPlans.map((item, index) => (
-            <div
-              key={index}
-              className="floor-plan--item flex flex-col justify-between rounded-3xl bg-white border border-primary shadow-[3px_3px_0_0_var(--color-primary)] p-8 text-center relative"
-            >
-              <div className="gallery--item" key={index}>
-                <Link
-                  className="gallery--image"
-                  href={`/images/floor-plans/${item}`}
-                  data-fancybox
-                  data-caption={`Codename Raintree Park - Gallery`}
-                >
-                  <Image
-                    src={`/images/floor-plans/${item}`}
-                    className="blur-sm"
-                    alt={`Floor Plans`}
-                    fill
-                    sizes="(max-width: 768px) 100vw"
-                  />
-                </Link>
-              </div>
-              {/* <Image
-                src={`/images/floor-plans/${item}`}
-                width={400}
-                height={350}
-                className=""
-                alt="Floor Plans"
-              /> */}
-              {item.message ? (
-                <div className="button-overlay absolute top-0 h-full  left-0 w-full flex justify-center items-center">
-                  <div className="flex text-3xl font-bold text-black capitalize z-10">
-                    {item.message}
+
+        <div className="slider-wrapper px-4 py-8 max-w-4xl mx-auto">
+          <Slider {...sliderSettings}>
+            {floorPlans.map((item, index) => (
+              <div key={index} className="px-2 outline-none">
+                <div className="floor-plan--item flex flex-col justify-between rounded-3xl bg-white border border-primary shadow-[3px_3px_0_0_var(--color-primary)] p-4 text-center relative h-full">
+                  <div className="gallery--item relative h-96 w-full">
+                    <Link
+                      className="gallery--image"
+                      href={`/images/floor-plans/${item}`}
+                      data-fancybox
+                      data-caption={`Prestige Pine Forest - Floor Plan ${
+                        index + 1
+                      }`}
+                    >
+                      <Image
+                        src={`/images/floor-plans/${item}`}
+                        alt={`Floor Plan ${index + 1}`}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </Link>
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="text-lg font-semibold">
+                      Floor Plan {index + 1}
+                    </h3>
                   </div>
                 </div>
-              ) : (
-                <div className="button-overlay absolute bottom-5  left-0 w-full hidden">
-                  <Link
-                    href="/upload/Prestige Pine Forest RERA Brochure LR.pdf"
-                    target="_blank"
-                    className="btn  uppercase  transition-all  inline-block mt-5"
-                  >
-                    {" "}
-                    <span className="flex items-center gap-2">
-                      <Download size={32} /> download brochure{" "}
-                    </span>
-                  </Link>
-                </div>
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
+          </Slider>
         </div>
+
         <p>{`Prestige Pine Forest is a meticulously planned residential project located in Whitefield, Bangalore. The master plan of this exquisite development has been designed to offer residents a harmonious living experience amidst lush greenery and modern amenities. Spread across acres of land, the master plan of Prestige Pine Forest encompasses thoughtfully designed towers that house spacious apartments with contemporary interiors.`}</p>
         <p>{`The project incorporates wide internal roads and well-lit pedestrian pathways, ensuring easy accessibility within the premises. Additionally, there are designated parking spaces for residents and visitors alike. The expansive clubhouse forms an integral part of the master plan, offering a plethora of recreational facilities such as a fully equipped gymnasium, indoor games room, yoga studio, and more`}</p>
         <p>{`The floor plan of Prestige Pine Forest is designed to offer spacious and luxurious living spaces for residents. With a variety of options available, you can choose apartments that cater to different lifestyles and preferences.`}</p>

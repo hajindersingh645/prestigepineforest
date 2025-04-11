@@ -33,7 +33,7 @@ const Overview = () => {
           <h2 className="title">project overview</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div className="col col-span-2">
+          {/* <div className="col col-span-2">
             <p>
               Nestled in the serene surroundings of Whitefield, Bangalore,
               Prestige Pine Forest offers a modern and luxurious living
@@ -77,15 +77,15 @@ const Overview = () => {
               sprawling landscaped gardens dotted throughout the property where
               you can reconnect with nature
             </p>
-          </div>
-          <div className="col">
+          </div> */}
+          {/* <div className="col">
             <Image
               src="/images/portrait-image.jpeg"
               width={400}
               height={600}
               alt="Prestige Pine Forest"
             />
-          </div>
+          </div> */}
         </div>
         <div className="overflow-x-auto p-4 px-0">
           <table className="min-w-full bg-white border border-primary rounded-lg">

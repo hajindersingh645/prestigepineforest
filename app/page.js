@@ -19,15 +19,15 @@ export default function Home() {
     <main className="">
       <HeroSection />
       <Overview />
-      <Highlights />
-      <Amenities />
-      <MasterPlan />
-      <FloorPlans />
-      <VirtualTour />
       <Pricing />
       <CallToAction />
+      <Amenities />
+      <Highlights />
+      <MasterPlan />
+      <FloorPlans />
       <ProjectGallery />
       <Location />
+      <VirtualTour />
       <Form />
     </main>
   );

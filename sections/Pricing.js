@@ -158,13 +158,6 @@ const Pricing = () => {
                   <span className="font-semibold"> Size (Carpet): </span>
                   <span className="capitalize">{item.saleArea} (SqFt)</span>
                 </p>
-                {/* <ul className="features space-y-2 divide-y mb-6">
-                  {item.features.map((feature, i) => (
-                    <li key={i} className="text-gray-600">
-                      {feature}
-                    </li>
-                  ))}
-                </ul> */}
                 <p className="property-price capitalize flex items-center justify-center gap-2">
                   <span className="font-semibold text-3xl">Price:</span>{" "}
                   <span className="font-normal text-2xl"> {item.price}</span>{" "}

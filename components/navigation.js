@@ -8,12 +8,12 @@ const navigation = [
     path: "#project-overview",
   },
   {
-    label: "Amenities",
-    path: "#amenities",
-  },
-  {
     label: "Pricing",
     path: "#pricing",
+  },
+  {
+    label: "Amenities",
+    path: "#amenities",
   },
   {
     label: "master Plan",
@@ -24,12 +24,12 @@ const navigation = [
     path: "#floor-plans",
   },
   {
-    label: "Location",
-    path: "#location",
-  },
-  {
     label: "Gallery",
     path: "#gallery",
+  },
+  {
+    label: "Location",
+    path: "#location",
   },
 ];
 
