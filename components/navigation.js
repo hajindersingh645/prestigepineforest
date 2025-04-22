@@ -4,7 +4,7 @@ const navigation = [
     path: "#about",
   },
   {
-    label: "Project Overview",
+    label: "Project",
     path: "#project-overview",
   },
   {

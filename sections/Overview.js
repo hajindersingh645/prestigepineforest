@@ -32,16 +32,12 @@ const Overview = () => {
         <div className="page-header">
           <h2 className="title">project overview</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* <div className="col col-span-2">
+        <div className="grid grid-cols-1 gap-5">
+          <div className="col col-span-2">
             <p>
-              Nestled in the serene surroundings of Whitefield, Bangalore,
-              Prestige Pine Forest offers a modern and luxurious living
-              experience. This residential project by Prestige Group is designed
-              to provide residents with a harmonious blend of nature and urban
-              convenience.
+            Prestige Pine Forest, located in Pattandur Agrahara on ECC Road, Whitefield, Bangalore, is an upcoming ultra-luxury apartment project developed by the Prestige Group. Spanning across a generous 10-acre area, the property is designed with 80% open spaces, providing a green, spacious environment for residents. With 230 premium apartments available in 3, 3.5, and 4 BHK configurations, this new launch comprises four towers, each with 16 floors. Prestige Pine Forest promises a high standard of living through luxury interiors and thoughtfully crafted spaces, aiming to elevate the Whitefield residential experience.
             </p>
-            <p>
+            {/* <p>
               Spread across acres of verdant landscapes, Prestige Pine Forest
               boasts beautifully crafted apartments that exude elegance and
               style. With meticulously planned layouts and contemporary
@@ -76,8 +72,8 @@ const Overview = () => {
               premises. For those seeking relaxation and tranquility, there are
               sprawling landscaped gardens dotted throughout the property where
               you can reconnect with nature
-            </p>
-          </div> */}
+            </p> */}
+          </div>
           {/* <div className="col">
             <Image
               src="/images/portrait-image.jpeg"

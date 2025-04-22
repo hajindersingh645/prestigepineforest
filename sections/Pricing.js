@@ -18,90 +18,101 @@ const unitData = [
   //   carpetArea: 396,
   //   numberOfUnits: 32,
   // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B1A",
+  //   saleArea: 2442,
+  //   carpetArea: 1511,
+  //   numberOfUnits: 3,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B1",
+  //   saleArea: 2614,
+  //   carpetArea: 1631,
+  //   numberOfUnits: 28,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B2",
+  //   saleArea: 2653,
+  //   carpetArea: 1669,
+  //   numberOfUnits: 32,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B4A",
+  //   saleArea: 2621,
+  //   carpetArea: 1604,
+  //   numberOfUnits: 3,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B3",
+  //   saleArea: 2757,
+  //   carpetArea: 1690,
+  //   numberOfUnits: 30,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "B4",
+  //   saleArea: 2796,
+  //   carpetArea: 1725,
+  //   numberOfUnits: 26,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "C1A",
+  //   saleArea: 3121,
+  //   carpetArea: 1895,
+  //   numberOfUnits: 6,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "C1",
+  //   saleArea: 3540,
+  //   carpetArea: 2211,
+  //   numberOfUnits: 56,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "C2",
+  //   saleArea: 3556,
+  //   carpetArea: 2218,
+  //   numberOfUnits: 66,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "D1",
+  //   saleArea: 6094,
+  //   carpetArea: 3564,
+  //   numberOfUnits: 1,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "D2",
+  //   saleArea: 6508,
+  //   carpetArea: 3942,
+  //   numberOfUnits: 1,
+  // },
+  // {
+  //   price: "coming soon",
+  //   unitType: "D3",
+  //   saleArea: 7011,
+  //   carpetArea: 4425,
+  //   numberOfUnits: 1,
+  // },
   {
-    price: "coming soon",
-    unitType: "B1A",
-    saleArea: 2442,
-    carpetArea: 1511,
-    numberOfUnits: 3,
+    unitType: "3.5 BHK",
+    carpetArea: 2757,
+    price: 3.8,    
   },
   {
-    price: "coming soon",
-    unitType: "B1",
-    saleArea: 2614,
-    carpetArea: 1631,
-    numberOfUnits: 28,
+    unitType: "4 BHK",
+    carpetArea: 3556,
+    price: 4.95,    
   },
-  {
-    price: "coming soon",
-    unitType: "B2",
-    saleArea: 2653,
-    carpetArea: 1669,
-    numberOfUnits: 32,
-  },
-  {
-    price: "coming soon",
-    unitType: "B4A",
-    saleArea: 2621,
-    carpetArea: 1604,
-    numberOfUnits: 3,
-  },
-  {
-    price: "coming soon",
-    unitType: "B3",
-    saleArea: 2757,
-    carpetArea: 1690,
-    numberOfUnits: 30,
-  },
-  {
-    price: "coming soon",
-    unitType: "B4",
-    saleArea: 2796,
-    carpetArea: 1725,
-    numberOfUnits: 26,
-  },
-  {
-    price: "coming soon",
-    unitType: "C1A",
-    saleArea: 3121,
-    carpetArea: 1895,
-    numberOfUnits: 6,
-  },
-  {
-    price: "coming soon",
-    unitType: "C1",
-    saleArea: 3540,
-    carpetArea: 2211,
-    numberOfUnits: 56,
-  },
-  {
-    price: "coming soon",
-    unitType: "C2",
-    saleArea: 3556,
-    carpetArea: 2218,
-    numberOfUnits: 66,
-  },
-  {
-    price: "coming soon",
-    unitType: "D1",
-    saleArea: 6094,
-    carpetArea: 3564,
-    numberOfUnits: 1,
-  },
-  {
-    price: "coming soon",
-    unitType: "D2",
-    saleArea: 6508,
-    carpetArea: 3942,
-    numberOfUnits: 1,
-  },
-  {
-    price: "coming soon",
-    unitType: "D3",
-    saleArea: 7011,
-    carpetArea: 4425,
-    numberOfUnits: 1,
-  },
+
 ];
 
 const pricingPlans = [
@@ -143,7 +154,7 @@ const Pricing = () => {
           <h2 className="title">Price of Prestige Pine Forest</h2>
         </div>
         <div className="pricing--col">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
             {unitData.map((item, index) => (
               <div
                 key={index}
@@ -175,6 +186,36 @@ const Pricing = () => {
                 </button>
               </div>
             ))}
+          </div> */}
+          <div>
+            <div className="grid grid-cols-1 gap-8">
+              <table className="pricing--table table-auto">
+                <thead>
+                  <tr>
+                    <th>Unit Type</th>
+                    <th>Carpet Area</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {unitData.map((item, index) => (
+                    <tr key={index}>
+                      <td><span className="font-semibold">{item.unitType}</span></td>
+                      <td>{item.carpetArea} Sq.Ft.</td>
+                      <td><span>₹ {item.price} Cr* Onwards</span> <button
+                  onClick={openModal}
+                  className="rounded-lg bg-primary text-white px-4 uppercase py-1.5 ml-2.5"
+                >
+                  {" "}
+                  <span className="flex justify-center items-center gap-2">
+                    enquiry now
+                  </span>
+                </button></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
           <div className="pt-4">
             {textContent.map((item, i) => (
@@ -183,6 +224,7 @@ const Pricing = () => {
               </p>
             ))}
           </div>
+          
         </div>
       </div>
       <FormPopup

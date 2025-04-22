@@ -36,7 +36,7 @@
     @apply rounded-bl-[46px] overflow-hidden;
   }
   section {
-    @apply py-20 px-5;
+    @apply py-10 md:py-20 px-5;
   }
   .header {
     @apply z-30 fixed w-full px-5 py-4 bg-white shadow-md;
@@ -54,7 +54,7 @@
     @apply flex items-center;
   }
   menu .link {
-    @apply mx-4 hover:text-primary transition-colors;
+    @apply mx-2.5 hover:text-primary transition-colors font-semibold;
   }
   .mobile-toggle {
     @apply lg:hidden items-center mr-4 text-primary flex;
@@ -99,19 +99,24 @@
 
   /* inputs */
   .input {
-    @apply bg-slate-100 px-6 py-3 w-full placeholder:capitalize text-black mb-3;
+    @apply border border-slate-400 px-6 py-3 w-full placeholder:capitalize text-black mb-3;
   }
   select {
-    @apply bg-slate-100 px-6 py-3 w-full placeholder:capitalize text-black mb-3;
+    @apply border border-slate-400 px-6 py-3 w-full placeholder:capitalize text-black mb-3;
   }
   .page-header {
     @apply text-center pb-4;
   }
   .title {
-    @apply text-5xl inline-block font-normal text-primary font-display capitalize mb-10 relative after:content-[''] after:w-32 after:h-[2px] after:bg-primary after:-bottom-4 after:left-0 z-10 after:absolute;
+    @apply text-3xl md:text-5xl inline-block font-bold text-primary font-display capitalize mb-10 relative after:content-[''] after:w-32 after:h-[2px] after:bg-primary after:-bottom-4 after:left-0 z-10 after:absolute;
+  }
+  .title::after {
+    @apply left-1/2 -translate-x-1/2;
   }
   p {
-    @apply text-lg font-base pb-3;
+    @apply text-lg font-base pb-3 font-medium;
+    font-size: 1.125rem;
+    line-height: 1.82222;
   }
   .gallery--image {
     @apply aspect-video relative;
@@ -124,6 +129,33 @@
   }
   .enquire-now form input {
     @apply w-full mt-3;
+  }
+
+  .pricing--table {
+    @apply w-full border border-slate-300;
+  }
+  .pricing--table th,
+  .pricing--table td {
+    @apply border text-left px-4 py-3;
+  }
+  .pricing--table thead {
+    @apply bg-slate-200 font-bold border-b border-slate-400;
+  }
+  .pricing--table tbody tr:not(:last-child) {
+    @apply border-b border-slate-300;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing--table {
+      @apply w-full;
+    }
+    .pricing--table thead {
+      @apply hidden;
+    }
+    .pricing--table th,
+  .pricing--table td {
+    @apply flex justify-between items-center flex-col gap-2.5 text-center;
+  }
   }
 }
 

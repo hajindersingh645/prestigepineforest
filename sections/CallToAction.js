@@ -17,8 +17,8 @@ const CallToAction = () => {
             Schedule a Site-Visit to Prestige Pine Forest
           </h2>
         </div>
-        <p className="text-2xl text-gray-700 font-medium capitalize mb-4">
-          Hurry Up! Enquire Now
+        <p className="text-2xl text-red-600 font-bold capitalize mb-4 animate-pulse">
+          !! Hurry Up! Enquire Now !!
         </p>
         {/* <p className="text-lg text-black capitalize">
           Pre Launch Prices Applicable On 1st Few Units. Construction Linked

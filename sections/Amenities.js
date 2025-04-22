@@ -32,7 +32,7 @@ const Amenities = () => {
           <h2 className="title">Amenities of Prestige Pine Forest</h2>
         </div>
         <div className="pb-7">
-          <div className="content grid grid-cols-1 md:grid-cols-3 gap-20">
+          <div className="content grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-20">
             {amenitiesList.map((item, index) => (
               <div
                 key={index}

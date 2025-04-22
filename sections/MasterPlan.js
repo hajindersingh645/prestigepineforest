@@ -61,7 +61,7 @@ const MasterPlan = () => {
         <div className="page-header">
           <h2 className="title">Master Plan of Prestige Pine Forest</h2>
         </div>
-        <div className="grid md:grid-cols-1 gap-8 p-8">
+        <div className="grid md:grid-cols-1 gap-8">
           <div className="col relative mx-auto">
             <img
               src="/images/floor-plans/master-plan-h.jpg"
@@ -69,7 +69,7 @@ const MasterPlan = () => {
               alt="master plan"
             />
           </div>
-          <div className="col grid md:grid-cols-5 gap-8 p-8">
+          <div className="col grid md:grid-cols-5 gap-8">
             {masterPlanFeatures.map((item, index) => (
               <div key={index} className="flex items-center gap-2">
                 <CheckCircle size={30} className="text-primary" />

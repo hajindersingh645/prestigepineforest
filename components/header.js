@@ -1,11 +1,11 @@
 "use client";
-import { HamIcon, Menu, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import React, { useState } from "react";
 import navigation from "./navigation";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./mobile-menu";
-const iconSize = "25";
+// const iconSize = "25";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
           <menu>
             {navigation.map((item, index) => (
               <li key={index} className="link-item">
-                <Link href={item.path} className="link ">
+                <Link href={item.path} className="link">
                   {item.label}
                 </Link>
               </li>
@@ -42,9 +42,9 @@ const Header = () => {
         <div className="header--call-now">
           <Link
             href="tel:+916360949350"
-            className="flex justify-between items-center text-xl font-semibold gap-2 hover:text-primary transition-colors"
+            className="flex justify-between items-center text-xl font-semibold gap-2 bg-primary text-white px-4 py-2.5 rounded-full  transition-colors hover:bg-transparent hover:text-primary border-2 border-primary"
           >
-            <Phone size="30" className="text-primary " /> +91 6360949350
+            <Phone /> +91 6360949350
           </Link>
         </div>
         <div onClick={toggleMenu} className="mobile-toggle">
