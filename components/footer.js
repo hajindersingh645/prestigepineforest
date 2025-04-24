@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className="wa-button">
         <Link
-          href={`https://wa.me/+916360949350`}
+          href={`https://wa.me/+919916404329`}
           className="btn wa-button--icon"
         >
           <span className="icon">

@@ -41,10 +41,10 @@ const Header = () => {
         </nav>
         <div className="header--call-now">
           <Link
-            href="tel:+916360949350"
+            href="tel:+919916404329"
             className="flex justify-between items-center text-xl font-semibold gap-2 bg-primary text-white px-4 py-2.5 rounded-full  transition-colors hover:bg-transparent hover:text-primary border-2 border-primary"
           >
-            <Phone /> +91 6360949350
+            <Phone /> +91 9916404329
           </Link>
         </div>
         <div onClick={toggleMenu} className="mobile-toggle">

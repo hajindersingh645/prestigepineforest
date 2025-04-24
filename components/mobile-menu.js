@@ -36,9 +36,9 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
         </menu>
       </nav>
       <div className="call-now text-center">
-        <Link href="tel:+916360949350" className="btn inline-block mx-auto">
+        <Link href="tel:+919916404329" className="btn inline-block mx-auto">
           <span className="flex items-center">
-            <Phone size={iconSize} /> <span>+91 6360949350</span>
+            <Phone size={iconSize} /> <span>+91 9916404329</span>
           </span>
         </Link>
       </div>
